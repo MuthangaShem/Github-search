@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SearchComponent } from './search/search.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { LandingpageComponent } from './landingpage/landingpage.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     ProfileComponent,
     SearchComponent,
     NavbarComponent,
+    LandingpageComponent,
   ],
   imports: [
     BrowserModule,
