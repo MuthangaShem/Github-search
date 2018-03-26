@@ -33,6 +33,7 @@ export class ProfileService {
   updateReponame(reponame:string){
     this.reponame=reponame;
   }
+  
   searchRepos(){
     return this._http.get('https://api.github.com/search/repositories?q='+this.reponame)
     .map(res => res);
