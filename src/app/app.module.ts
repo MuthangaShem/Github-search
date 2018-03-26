@@ -8,27 +8,24 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SearchComponent } from './search/search.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { LandingpageComponent } from './landingpage/landingpage.component';
-
+import {LandingpageComponent} from './landingpage/landingpage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     SearchComponent,
-    NavbarComponent,
-    LandingpageComponent,
+    LandingpageComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot([
-      {path: '', component:ProfileComponent},
-      {path: '', component:SearchComponent},
-      {path: '', component:ProfileComponent},
-      ])
+    // RouterModule.forRoot([
+    //   {path: '', component:ProfileComponent},
+    //   {path: '', component:SearchComponent},
+    //   {path: '', component:ProfileComponent},
+    //   ])
   ],
   providers: [],
   bootstrap: [AppComponent]
