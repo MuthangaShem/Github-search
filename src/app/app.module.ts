@@ -13,7 +13,7 @@ import { SearchComponent } from './search/search.component';
   declarations: [
     AppComponent,
     ProfileComponent,
-    SearchComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
