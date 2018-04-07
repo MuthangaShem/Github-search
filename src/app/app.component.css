@@ -1,0 +1,44 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.background{
+	background-image: url('assets/cat.jpg'); 
+	background-repeat: no-repeat; 
+/*	background-attachment: fixed;
+*/	background-size: cover;
+	background-position: center; 
+	padding: 0;
+	margin: 0; 
+	height:100vh;
+}
+
+.fa{
+	font-size:30px; 
+	color:white;
+}
