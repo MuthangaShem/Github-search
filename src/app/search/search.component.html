@@ -1,9 +1,9 @@
 <div class="row search" >
-	<div class="col-md-6">
+	<div class="col-md-6 offset-md-3">
 
 		<form  #searchForm='ngForm'>
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Github Username" name="username" [(ngModel)]="username" (keyup.enter)="search()">
+			<div class="form-group ">
+				<input type="text" class="form-control" placeholder="Github Username" name="username" [(ngModel)]="username" (keyup)="search()">
 			</div>
 		</form>
 
@@ -18,8 +18,8 @@
 				<span class="label label-default">Public Repos: {{user.public_repos}}</span>
 
 <!-- 				<h1> {{user.name}}</h1>
-				<h2>{{user.public_repos}} Public Repos</h2>
- -->		</div>
+ -->				<!-- <h2>{{user.public_repos}} Public Repos</h2> -->
+		</div>
 			<div>
 				<ul class="list-group">
 					<li class="list-group-item"><strong>Username: </strong>{{user.login}}</li>

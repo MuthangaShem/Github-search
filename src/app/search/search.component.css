@@ -1,3 +1,9 @@
 .search{
 	padding-top: 10%;
 }
+
+input{
+	border-color: #4CAF50;
+	border-width: 3px;
+	opacity: 0.5;
+}
