@@ -1,32 +1,23 @@
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header" style="">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#route" aria-expanded="true">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <i class="fa fa-github"></i>
-      <a class="navbar-brand" href="">Github Search App</a>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="route">
-      <ul class="nav ">
-        <li style="display: inline;"><a  routerLink='/search' routerLinkActive='active'><span class="glyphicon glyphicon-search"></span> Search</a></li>
-        <li style="display: inline;"><a routerLink='/profile' routerLinkActive='active'><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
-        <li style="display: inline;"><a routerLink='/about' routerLinkActive='active'><span class="glyphicon glyphicon-info-sign"></span> About</a></li>        
-      </ul>
-      
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+<nav id="navbar" class="navbar fixed-top navbar-expand-sm navbar-light bg-dark" >
+<!--     <i class="fa fa-github"></i>
+ -->  <a class="navbar-brand" style="font-family: 'PT Serif', serif;size: 150px; color: #45843d; font-weight: bolder" href=""><span class="fa fa-github"></span> GitHub Search</a>
+  <ul class="nav nav-pills ">
+    <li class="nav-item">
+      <a class="nav-link" routerLink='/search'><span class="glyphicon glyphicon-search"></span>Search</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink='/profile'><span class="glyphicon glyphicon-user"></span>My Profile</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink='/about'><span class="glyphicon glyphicon-info-sign"></span>About</a>
+    </li>
+  </ul>
 </nav>
-<!-- End of Navigation -->
 <div class="background">
-<router-outlet>
-  
-</router-outlet>
+  <router-outlet>
+    
+  </router-outlet>
 </div>
 <!-- <app-profile>Loading the creator's profile...</app-profile>
 -->
