@@ -1,33 +1,36 @@
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12" *ngIf = "user">
-			<div class="row">
-				<div class="col-md-6">
-					<h3>{{user.name}}</h3>
-					<img class="img-thumbnail github-avatar" src="{{user.avatar_url}}">
-				</div>
-				<div class="col-md-6">
+
+			<div class="frame"  *ngIf = "user" style="top: 50%">
+			  <div class="center">
+			    
+					<div class="profile">
+						<div class="image">
+							<div class="circle-1"></div>
+							<div class="circle-2"></div>
+							<img src="{{user.avatar_url}}" width="100" height="100" alt="{{user.name}}">
+						</div>
+						
+						<div class="name">{{user.login}}</div>
+						<div class="job">{{user.bio}}</div>
+						
+						<div class="actions">
+							<span class="btn">Followers:<strong> {{user.followers}}</strong></span>
+							<span class="btn">Following:<strong> {{user.following}}</strong></span>
+						</div>
+					</div>
+					
 					<div class="stats">
-						<span class="label label-default">Public Repos: {{user.public_repos}}</span>
-						<span class="label label-primary">Followers:   {{user.followers}}</span>
-						<span class="label label-success">Following:  {{user.following}}</span>
-						<span class="label label-info">Public Gists: {{user.public_gists}}</span>
+						<div class="box">
+							<span class="value">{{user.name}}</span>
+							<span class="parameter">Name</span>
+						</div>
+						<div class="box">
+							<span class="value"> {{user.public_repos}}</span>
+							<span class="parameter">Repos</span>
+						</div>
+						<div class="box">
+							<span class="value">{{user.created_at}}</span>
+							<span class="parameter">Member Since</span>
+						</div>
 					</div>
-					<div>
-						<ul class="list-group">
-							<li class="list-group-item"><strong>Username: </strong>{{user.login}}</li>
-							<li class="list-group-item"><strong>Location: </strong>{{user.location}}</li>
-							<li class="list-group-item"><strong>Email: </strong>{{user.email}}</li>
-							<li class="list-group-item"><strong>Blog: </strong>{{user.blog}}</li>
-							<li class="list-group-item"><strong>Member Since: </strong>{{user.created_at}}</li>
-						</ul>
-					</div>
-
+			  </div>
 			</div>
-			<br>
-		</div>
-
-		
-			
-		</div>
-</div>
